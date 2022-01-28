@@ -7,7 +7,7 @@
         public $ddr;
 
         public function __construct($_brand, $_model ,$_frequency, $_price, $_ddr) {
-           
+            parent::__construct($_brand, $_model, $_frequency, $_price);
             $this-> ddr = $_ddr;
         }
     }

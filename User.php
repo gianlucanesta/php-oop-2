@@ -19,7 +19,7 @@ class User {
         $this->cart[] = $product;
     }
 
-    public function getCarrellgetCarto() {
+    public function getCart() {
         return $this->cart;
     }
 
