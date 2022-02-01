@@ -4,11 +4,20 @@
 
     class Ram extends ComputerComponent {
 
-        public $ddr;
+        public $memory;
 
-        public function __construct($_brand, $_model ,$_frequency, $_price, $_ddr) {
+        public function __construct($_brand, $_model ,$_frequency, $_price, $_memory) {
             parent::__construct($_brand, $_model, $_frequency, $_price);
-            $this-> ddr = $_ddr;
+            
+
+            // $_memory_kg deve essere un numero intero
+            if(is_int($_memory)) {
+                $this->memory = $_memory;
+            } else {
+                // echo '$_memory deve essere un numero intero';
+                // die();
+                throw new Exception('$_memory deve essere un numero intero');
+            }
         }
     }
 
