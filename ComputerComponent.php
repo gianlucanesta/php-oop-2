@@ -1,6 +1,9 @@
 <?php
 
 class ComputerComponent {
+
+    use Assistance;
+
     public $brand;
 
     public $model;
