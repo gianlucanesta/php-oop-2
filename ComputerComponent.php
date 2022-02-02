@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/assistance.php';
+
 class ComputerComponent {
 
     use Assistance;

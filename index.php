@@ -11,12 +11,9 @@ $intel = new Cpu('Intel', 'i9 11900k', '3.5', 470);
 
 $nvidia = new GraphicCard('Nvidia', 'GeForce 1660 Ti', '1.86', 500, 6);
 
-// $patriot = new Ram('Patriot', 'Viper Steel', '3.6', 150, 32);
-
 try {
     $patriot = new Ram('Patriot', 'Viper Steel', '3.6', 150, '32');
 } catch(Exception $e) {
-   
 
     // Scrittura nel file di log.
     error_log($e);
@@ -76,9 +73,6 @@ $gn->finalPrice();
             <?php echo $gn->finalPrice(); ?> €
         </h1>
     </div>
-
-    
-    
-            
+   
 </body>
 </html>

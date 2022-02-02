@@ -4,7 +4,6 @@
 
     class Cpu extends ComputerComponent {
        
-    
     }
 
 ?>
